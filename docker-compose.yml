@@ -69,7 +69,9 @@ services:
     image: ${IMAGE_REPO}/explorer-ui
     restart: unless-stopped
     ports:
-      - "8080:80"
+      - "80:80"
+    volumes:
+      - ./explorer-ui-config.json:/usr/share/nginx/html/assets/config.json
     depends_on:
       # - api
       - node
