@@ -6,4 +6,4 @@
 	url = https://github.com/polkascan/explorer-api.git
 [submodule "explorer-ui"]
 	path = explorer-ui
-	url = https://github.com/polkascan/explorer-ui.git
+	url = https://github.com/PreimageNetwork/prescan-explorer-ui.git

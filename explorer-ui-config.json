@@ -1,5 +1,21 @@
 {
-  "local": {
+  "ethereum": {
+    "name": "Ethereum Mainnet",
+    "substrateRpcUrlArray": ["ws://127.0.0.1:9944"],
+    "explorerWsUrlArray": ["ws://127.0.0.1:8000/graphql-ws"]
+  },
+  "base": {
+    "name": "Base Mainnet",
+    "substrateRpcUrlArray": ["ws://127.0.0.1:9944"],
+    "explorerWsUrlArray": ["ws://127.0.0.1:8000/graphql-ws"]
+  },
+  "sepolia": {
+    "name": "Sepolia Testnet",
+    "substrateRpcUrlArray": ["ws://127.0.0.1:9944"],
+    "explorerWsUrlArray": ["ws://127.0.0.1:8000/graphql-ws"]
+  },
+  "base-sepolia": {
+    "name": "Base Sepolia Testnet",
     "substrateRpcUrlArray": ["ws://127.0.0.1:9944"],
     "explorerWsUrlArray": ["ws://127.0.0.1:8000/graphql-ws"]
   }

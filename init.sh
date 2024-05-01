@@ -18,9 +18,12 @@
 # You should have received a copy of the GNU General Public License
 # along with Polkascan. If not, see <http://www.gnu.org/licenses/>.
 #
-echo "Init Git submodules ..."
 git submodule update --init --recursive
-echo "Copying explorer-ui-config.json and explorer-ui-privacy-policy.html to submodule ..."
 cp explorer-ui-config.json explorer-ui/src/assets/config.json
 cp explorer-ui-privacy-policy.html explorer-ui/src/assets/privacy-policy.html
-echo "Done. Run 'docker-compose up --build' to build and start application"
+
+echo -e "Done\n"
+echo -e "1. to build images:\n\n\tbash docker/build.sh\n"
+echo -e "2. to push images to registry:\n\n\tbash docker/push.sh\n"
+echo -e "3. to start:\n\n\tIMAGE_REPO=preimage-network docker compose up -d\n"
+echo -e "4. to stop:\n\n\tIMAGE_REPO=preimage-network docker compose down -v\n"
